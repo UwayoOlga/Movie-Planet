@@ -12,7 +12,7 @@ class HomeScreen extends StatelessWidget {
       backgroundColor: const Color(0xFF1E1E1E),
       appBar: AppBar(
         title: Text(
-          'PlayLab',
+          'Movie Planet Uganda',
           style: GoogleFonts.poppins(
             fontWeight: FontWeight.bold,
             color: Colors.white,
@@ -57,7 +57,7 @@ class HomeScreen extends StatelessWidget {
                 ),
                 const SizedBox(height: 32),
                 Text(
-                  'Welcome to PlayLab!',
+                  'Welcome to Movie Planet Uganda!',
                   style: GoogleFonts.poppins(
                     fontSize: 28,
                     fontWeight: FontWeight.bold,
@@ -113,12 +113,31 @@ class HomeScreen extends StatelessWidget {
                       ),
                       const SizedBox(height: 8),
                       Text(
-                        'You are now logged in to PlayLab. The movie streaming features will be implemented here.',
+                        'You are now logged in to Movie Planet Uganda. Ready to explore movies!',
                         style: GoogleFonts.poppins(
                           fontSize: 14,
                           color: Colors.grey[400],
                         ),
                         textAlign: TextAlign.center,
+                      ),
+                      const SizedBox(height: 24),
+                      ElevatedButton.icon(
+                        onPressed: () {
+                          Navigator.pushReplacementNamed(context, '/browse');
+                        },
+                        icon: const Icon(Icons.movie),
+                        label: const Text('Browse Movies'),
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: const Color(0xFFFF6B6B),
+                          foregroundColor: Colors.white,
+                          padding: const EdgeInsets.symmetric(
+                            horizontal: 24,
+                            vertical: 12,
+                          ),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(8),
+                          ),
+                        ),
                       ),
                     ],
                   ),

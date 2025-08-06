@@ -90,7 +90,7 @@ class _SignupScreenState extends State<SignupScreen> {
                         ),
                         const SizedBox(height: 24),
                         Text(
-                          'PlayLab',
+                          'Movie Planet Uganda',
                           style: GoogleFonts.poppins(
                             fontSize: 32,
                             fontWeight: FontWeight.bold,
